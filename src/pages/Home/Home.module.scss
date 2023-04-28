@@ -1,7 +1,6 @@
 @import "../../sass/utils/container";
 @import "../../sass/utils/mixins";
 @import "../../sass/utils/variables";
-
 .wrapper {
   padding-bottom: 88px;
   background-repeat: no-repeat;
@@ -11,67 +10,8 @@
     padding-bottom: 362px;
     background-position: center;
   }
-}
-
-.wrapperNav {
-  margin-bottom: 62px;
-  @include tablet {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 325px;
-  }
-}
-
-.wrapperLogo {
-  display: flex;
-  gap: 8px;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 16px;
-  @include tablet {
-    margin-bottom: 0;
-  }
-}
-
-.logo {
-  width: 39px;
-  height: 31px;
-  fill: getColor("clr-bg");
-}
-
-.logoFirstTitle {
-  color: getColor("clr-bg");
-  font-size: 28px;
-  line-height: 38px;
-  font-style: normal;
-  @include tablet {
-    font-size: 35px;
-    line-height: 48px;
-  }
-}
-
-.logoSecondTitle {
-  color: getColor("clr-white");
-  font-size: 28px;
-  line-height: 38px;
-  @include tablet {
-    font-size: 35px;
-    line-height: 48px;
-  }
-}
-
-.navList {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  color: getColor("clr-white");
-  font-size: 16px;
-  line-height: 22px;
-  @include tablet {
-    font-size: 18px;
-    line-height: 25px;
+  @include desktop {
+    padding-bottom: 270px;
   }
 }
 
@@ -84,6 +24,9 @@
   margin-bottom: 24px;
   @include tablet {
     width: 530px;
+  }
+  @include desktop {
+    width: auto;
   }
 }
 
@@ -105,6 +48,9 @@
   margin-right: auto;
   @include tablet {
     width: 412px;
+  }
+  @include desktop {
+    width: auto;
   }
 }
 

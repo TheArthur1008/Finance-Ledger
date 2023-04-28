@@ -1,0 +1,106 @@
+@import "../../sass/utils/mixins";
+@import "../../sass/utils/variables";
+
+.wrapperNav {
+  margin-bottom: 62px;
+  @include tablet {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 325px;
+  }
+}
+
+.wrapperLogo {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  @include tablet {
+    margin-bottom: 0;
+  }
+  @include desktop {
+    cursor: pointer;
+    &:hover .logo,
+    &:focus .logo {
+      width: 41px;
+      height: 33px;
+      fill: getColor("clr-acc");
+    }
+    &:hover .logoFirstTitle,
+    &:focus .logoFirstTitle {
+      font-size: 38px;
+      color: getColor("clr-acc");
+    }
+  }
+}
+
+.logo {
+  width: 39px;
+  height: 31px;
+  fill: getColor("clr-bg");
+  @include desktop {
+    width: 40px;
+  }
+}
+
+.logoFirstTitle {
+  color: getColor("clr-bg");
+  font-size: 28px;
+  line-height: 38px;
+  font-style: normal;
+  @include tablet {
+    font-size: 35px;
+    line-height: 48px;
+  }
+}
+
+.logoSecondTitle {
+  color: getColor("clr-white");
+  font-size: 28px;
+  line-height: 38px;
+  @include tablet {
+    font-size: 35px;
+    line-height: 48px;
+  }
+}
+
+.navList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: getColor("clr-white");
+  font-size: 16px;
+  line-height: 22px;
+  @include tablet {
+    font-size: 18px;
+    line-height: 25px;
+    gap: 20px;
+  }
+  @include desktop {
+    cursor: pointer;
+    gap: 46px;
+  }
+}
+
+.navItem {
+  @include desktop {
+    position: relative;
+    &:hover::after,
+    &:focus::after {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      left: 0;
+      border-radius: 2px;
+      transform: translateY(15px);
+
+      width: 100%;
+      height: 2px;
+      background-color: getColor("clr-bg");
+      @include transition-animation(all);
+    }
+  }
+}
