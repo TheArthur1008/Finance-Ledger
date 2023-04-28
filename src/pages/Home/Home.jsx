@@ -13,14 +13,14 @@ const Home = () => {
       }}
     >
       <div className={s.container}>
-        <div className={s.wrapperLogo}>
-          <svg className={s.logo}>
-            <use href={`${sprite}#logo`} />
-          </svg>
-          <p className={s.logoFirstTitle}>Finance</p>
-          <p className={s.logoSecondTitle}>Ledger</p>
-        </div>
-        <nav className={s.wrapperList}>
+        <nav className={s.wrapperNav}>
+          <div className={s.wrapperLogo}>
+            <svg className={s.logo}>
+              <use href={`${sprite}#logo`} />
+            </svg>
+            <p className={s.logoFirstTitle}>Finance</p>
+            <p className={s.logoSecondTitle}>Ledger</p>
+          </div>
           <ul className={s.navList}>
             <li className={s.navItem}>Home</li>
             <li className={s.navItem}>About</li>
@@ -31,9 +31,11 @@ const Home = () => {
         </nav>
         <div className={s.wrapperTitle}>
           <h1 className={s.title}>The Sky Is The Limit</h1>
-          <p className={s.subtitle}>
-            We provide world class financial assistance
-          </p>
+          <div className={s.wrapperSub}>
+            <p className={s.subtitle}>
+              We provide world class financial assistance
+            </p>
+          </div>
         </div>
         <Button />
       </div>
