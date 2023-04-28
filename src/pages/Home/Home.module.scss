@@ -1,11 +1,13 @@
 @import "../../sass/utils/container";
 @import "../../sass/utils/mixins";
 @import "../../sass/utils/variables";
+
 .wrapper {
   padding-bottom: 88px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
+  background-color: #333333;
   @include tablet {
     padding-bottom: 362px;
     background-position: center;
@@ -61,4 +63,23 @@
     font-size: 40px;
     line-height: 48px;
   }
+}
+
+.button {
+  background-color: getColor("clr-bg");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 16px 32px;
+  color: getColor("clr-white");
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.buttonIcon {
+  width: 7px;
+  height: 11px;
 }

@@ -1,7 +1,9 @@
 import React from "react";
+
 import s from "./Home.module.scss";
+import sprite from "../../images/sprite.svg";
 import background from "../../images/background.png";
-import Button from "../../components/Button/Button";
+
 import Navigation from "../../components/Navigation/Navigation";
 
 const Home = () => {
@@ -23,7 +25,12 @@ const Home = () => {
             </p>
           </div>
         </div>
-        <Button />
+        <button type="button" className={s.button}>
+          <svg className={s.buttonIcon}>
+            <use href={`${sprite}#smallright`} />
+          </svg>
+          <span>Read More</span>
+        </button>
       </div>
     </div>
   );

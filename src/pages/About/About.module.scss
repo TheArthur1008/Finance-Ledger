@@ -1,0 +1,92 @@
+@import "../../sass/utils/container";
+@import "../../sass/utils/mixins";
+@import "../../sass/utils/variables";
+
+.wrapper {
+  background-color: getColor("clr-bg");
+
+  @include tablet {
+    display: flex;
+  }
+  @include desktop {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.image {
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 220px;
+  @include tablet {
+    background-size: cover;
+    background-position: center;
+    width: 368px;
+    height: 589px;
+  }
+  @include desktop {
+    width: 670px;
+    height: 460px;
+  }
+}
+
+.wrapperTitle {
+  color: getColor("clr-white");
+  padding-top: 80px;
+  padding-bottom: 80px;
+  padding-left: 20px;
+  padding-right: 20px;
+  @include tablet {
+    width: 384px;
+    padding-top: 62px;
+    padding-bottom: 62px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  @include desktop {
+    width: 690px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.title {
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 16px;
+  @include tablet {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+
+.subtitle {
+  font-size: 32px;
+  line-height: 44px;
+  margin-bottom: 24px;
+  @include tablet {
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+
+.description {
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 25px;
+  @include tablet {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+
+.button {
+  background-color: getColor("clr-bg");
+  padding: 16px 32px;
+  color: getColor("clr-white");
+  border-radius: 5px;
+  font-size: 18px;
+  border: 1px solid getColor("clr-white");
+}
