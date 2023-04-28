@@ -2,12 +2,72 @@
 @import "../../sass/utils/mixins";
 @import "../../sass/utils/variables";
 
+.wrapper {
+  padding-bottom: 88px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
 .wrapperLogo {
   display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
 }
 
 .logo {
   width: 39px;
   height: 31px;
   fill: getColor("clr-bg");
+}
+
+.logoFirstTitle {
+  color: getColor("clr-bg");
+  font-size: 28px;
+  line-height: 38px;
+  font-style: normal;
+}
+
+.logoSecondTitle {
+  color: getColor("clr-white");
+  font-size: 28px;
+  line-height: 38px;
+}
+
+.wrapperList {
+  margin-bottom: 62px;
+}
+
+.navList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: getColor("clr-white");
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.wrapperTitle {
+  color: getColor("clr-white");
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 271px;
+  margin-bottom: 24px;
+}
+
+.title {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 54px;
+  margin-bottom: 16px;
+}
+
+.subtitle {
+  font-size: 26px;
 }

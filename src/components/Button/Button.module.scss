@@ -1,0 +1,23 @@
+@import "../../sass/utils/variables";
+
+.button {
+  background-color: getColor("clr-bg");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 16px 32px;
+  color: getColor("clr-white");
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.icon {
+  width: 7px;
+  height: 11px;
+}
+
+.title {
+}

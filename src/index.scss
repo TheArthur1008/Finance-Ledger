@@ -14,7 +14,7 @@
 }
 
 body {
-  font-family: "OpenSans-regular", sans-serif;
+  font-family: "OpenSans-Regular", sans-serif;
   background-color: getColor("clr-white");
 }
 
@@ -51,4 +51,5 @@ a {
 
 button {
   cursor: pointer;
+  border: none;
 }
