@@ -1,0 +1,13 @@
+@import "../../sass/utils/container";
+@import "../../sass/utils/mixins";
+@import "../../sass/utils/variables";
+
+.wrapperLogo {
+  display: flex;
+}
+
+.logo {
+  width: 39px;
+  height: 31px;
+  fill: getColor("clr-bg");
+}

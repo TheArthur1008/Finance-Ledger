@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "Open Sans";
+  src: local("OpenSans-Regular"),
+    url("../../assests/fonts/OpenSans-Regular.ttf") format("truetype");
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: local("OpenSans-SemiBold"),
+    url("../../assests/fonts/OpenSans-SemiBold.ttf") format("truetype");
+
+  font-weight: normal;
+  font-style: normal;
+}

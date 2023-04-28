@@ -1,0 +1,9 @@
+$colors: (
+  "clr-bg": #28a745,
+  "clr-white": #ffffff,
+  "clr-black": #333333,
+);
+
+@function getColor($color) {
+  @return map-get($colors, $color);
+}
