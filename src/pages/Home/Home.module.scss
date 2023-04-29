@@ -24,10 +24,13 @@
   margin-right: auto;
   width: 271px;
   margin-bottom: 24px;
+  padding-top: 160px;
   @include tablet {
     width: 530px;
+    padding-top: 378px;
   }
   @include desktop {
+    padding-top: 272px;
     width: auto;
   }
 }

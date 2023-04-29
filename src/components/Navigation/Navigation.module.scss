@@ -2,12 +2,10 @@
 @import "../../sass/utils/variables";
 
 .wrapperNav {
-  margin-bottom: 62px;
+  position: fixed;
   @include tablet {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin-bottom: 325px;
   }
 }
 
@@ -19,9 +17,11 @@
   margin-bottom: 16px;
   @include tablet {
     margin-bottom: 0;
+    margin-right: 73px;
   }
   @include desktop {
     cursor: pointer;
+    margin-right: 552px;
     &:hover .logo,
     &:focus .logo {
       width: 41px;

@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom";
 const Navigation = () => {
   return (
     <nav className={s.wrapperNav}>
-      <NavLink className={s.wrapperLogo}>
+      <NavLink to="/" className={s.wrapperLogo}>
         <svg className={s.logo}>
           <use href={`${sprite}#logo`} />
         </svg>
