@@ -15,11 +15,10 @@
 }
 
 .image {
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   height: 220px;
   @include tablet {
-    background-size: cover;
     background-position: center;
     width: 368px;
     height: 589px;

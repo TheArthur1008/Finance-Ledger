@@ -1,4 +1,5 @@
 import About from "./pages/About/About";
+import Cases from "./pages/Cases/Cases";
 import Home from "./pages/Home/Home";
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <>
       <Home />
       <About />
+      <Cases />
     </>
   );
 }
