@@ -2,7 +2,7 @@ import React from "react";
 
 import s from "./Home.module.scss";
 import sprite from "../../images/sprite.svg";
-import background from "../../images/background.png";
+import background from "../../images/background.jpg";
 
 import Navigation from "../../components/Navigation/Navigation";
 
@@ -15,8 +15,9 @@ const Home = () => {
         backgroundImage: `url(${background})`,
       }}
     >
+      {" "}
+      <Navigation />
       <div className={s.container}>
-        <Navigation />
         <div className={s.wrapperTitle}>
           <h1 className={s.title}>The Sky Is The Limit</h1>
           <div className={s.wrapperSub}>

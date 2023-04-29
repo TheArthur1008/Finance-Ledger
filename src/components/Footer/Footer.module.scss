@@ -1,0 +1,16 @@
+@import "../../sass/utils/container";
+@import "../../sass/utils/mixins";
+@import "../../sass/utils/variables";
+
+.wrapper {
+  background-color: #333333;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.copyright {
+  color: getColor("clr-white");
+  text-align: center;
+  font-size: 18px;
+  line-height: 25px;
+}

@@ -80,6 +80,10 @@
   margin-right: auto;
   border-radius: 5px;
   font-size: 18px;
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
 }
 
 .buttonIcon {

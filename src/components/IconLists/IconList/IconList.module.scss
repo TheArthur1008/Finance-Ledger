@@ -1,0 +1,22 @@
+@import "../../../sass/utils/mixins";
+@import "../../../sass/utils/variables";
+
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 12px;
+}
+
+.icon {
+  width: 35px;
+  height: 35px;
+  fill: getColor("clr-white");
+  cursor: pointer;
+  @include transition-animation(all);
+  &:hover,
+  &:focus {
+    fill: getColor("clr-acc");
+  }
+}

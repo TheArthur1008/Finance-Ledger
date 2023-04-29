@@ -1,0 +1,44 @@
+@import "../../sass/utils/mixins";
+@import "../../sass/utils/variables";
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  @include tablet {
+    gap: 17px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  @include desktop {
+    gap: 20px;
+  }
+}
+
+.item {
+  @include tablet {
+    width: calc((100% - 6 * 8px) / 3);
+  }
+  @include desktop {
+    width: calc((100% - 6 * 7px) / 3);
+  }
+}
+
+.image {
+  width: 280px;
+  height: 176px;
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+  @include transition-animation(all);
+  @include tablet {
+    width: 223px;
+    height: 148px;
+  }
+  @include desktop {
+    width: 421px;
+    height: 282px;
+    opacity: 1;
+  }
+}

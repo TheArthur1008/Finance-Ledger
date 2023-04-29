@@ -3,10 +3,24 @@
 
 .wrapperNav {
   position: fixed;
+  top: 0;
+  left: 0;
+  display: block;
+  min-height: 50px;
+  width: 100%;
+  padding-top: 20px;
+  z-index: 1;
+  cursor: pointer;
+
   @include tablet {
     display: flex;
     align-items: center;
+    justify-content: center;
   }
+}
+
+.wrapperNavScroll {
+  background-color: rgba(4, 4, 4, 0.5);
 }
 
 .wrapperLogo {
@@ -15,24 +29,23 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 16px;
+  @include transition-animation(all);
+  &:hover .logo,
+  &:focus .logo {
+    transform: scale(1.04);
+    fill: getColor("clr-acc");
+  }
+  &:hover .logoFirstTitle,
+  &:focus .logoFirstTitle {
+    transform: scale(1.04);
+    color: getColor("clr-acc");
+  }
   @include tablet {
     margin-bottom: 0;
     margin-right: 73px;
   }
   @include desktop {
-    cursor: pointer;
     margin-right: 552px;
-    &:hover .logo,
-    &:focus .logo {
-      width: 41px;
-      height: 33px;
-      fill: getColor("clr-acc");
-    }
-    &:hover .logoFirstTitle,
-    &:focus .logoFirstTitle {
-      font-size: 38px;
-      color: getColor("clr-acc");
-    }
   }
 }
 
@@ -60,6 +73,7 @@
   color: getColor("clr-white");
   font-size: 28px;
   line-height: 38px;
+  margin-left: 5px;
   @include tablet {
     font-size: 35px;
     line-height: 48px;
@@ -74,33 +88,31 @@
   color: getColor("clr-white");
   font-size: 16px;
   line-height: 22px;
+  cursor: pointer;
   @include tablet {
     font-size: 18px;
     line-height: 25px;
     gap: 20px;
   }
   @include desktop {
-    cursor: pointer;
     gap: 46px;
   }
 }
 
 .navItem {
-  @include desktop {
-    position: relative;
-    &:hover::after,
-    &:focus::after {
-      position: absolute;
-      content: "";
-      bottom: 0;
-      left: 0;
-      border-radius: 2px;
-      transform: translateY(15px);
+  @include transition-animation(all);
+  position: relative;
+  &:hover::after,
+  &:focus::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    border-radius: 2px;
+    transform: translateY(15px);
 
-      width: 100%;
-      height: 2px;
-      background-color: getColor("clr-bg");
-      @include transition-animation(all);
-    }
+    width: 100%;
+    height: 2px;
+    background-color: getColor("clr-bg");
   }
 }

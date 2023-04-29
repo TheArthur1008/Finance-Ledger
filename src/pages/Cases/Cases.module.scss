@@ -1,6 +1,4 @@
 @import "../../sass/utils/container";
-@import "../../sass/utils/mixins";
-@import "../../sass/utils/variables";
 
 .container {
   padding-top: 56px;
@@ -52,32 +50,5 @@
   @include tablet {
     font-size: 18px;
     line-height: 25px;
-  }
-}
-
-.list {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  @include tablet {
-    gap: 17px;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  @include desktop {
-    gap: 20px;
-  }
-}
-
-.image {
-  width: 280px;
-  height: 176px;
-  @include tablet {
-    width: 223px;
-    height: 148px;
-  }
-  @include desktop {
-    width: 421px;
-    height: 282px;
   }
 }

@@ -1,0 +1,48 @@
+@import "../../sass/utils/container";
+@import "../../sass/utils/mixins";
+@import "../../sass/utils/variables";
+
+.wrapper {
+  background-color: #f4f4f4;
+  padding-bottom: 25px;
+  @include tablet {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+  }
+}
+
+.container {
+  @include tablet {
+    width: 50%;
+    padding: 0;
+  }
+}
+
+.image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 220px;
+  margin-bottom: 51px;
+  @include tablet {
+    margin-bottom: 0;
+    background-position: center;
+    width: 368px;
+    height: 354px;
+  }
+  @include desktop {
+    width: 670px;
+    height: 460px;
+  }
+}
+
+.title {
+  font-size: 32px;
+  line-height: 48px;
+  margin-bottom: 69px;
+  @include tablet {
+    margin-bottom: 24px;
+    font-size: 40px;
+    line-height: 54px;
+  }
+}

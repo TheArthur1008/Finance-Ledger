@@ -1,9 +1,7 @@
 import React from "react";
 
 import s from "./Team.module.scss";
-import john from "../../images/team/john.jpg";
-import jane from "../../images/team/jane.jpg";
-import smith from "../../images/team/smith.jpg";
+import TeamList from "../../components/TeamList/TeamList";
 
 const Team = () => {
   return (
@@ -16,29 +14,7 @@ const Team = () => {
           sapiente!
         </p>
       </div>
-      <ul className={s.list}>
-        <li className={s.item}>
-          <img className={s.image} src={john} alt="team work" />
-          <p className={s.descriptionTeam}>
-            <span className={s.name}>John Doe</span>
-            <span className={s.jobTitle}>President</span>
-          </p>
-        </li>
-        <li className={s.item}>
-          <img className={s.image} src={jane} alt="write" />
-          <p className={s.descriptionTeam}>
-            <span className={s.name}>Jane Doe</span>
-            <span className={s.jobTitle}>Vice President</span>
-          </p>
-        </li>
-        <li className={s.item}>
-          <img className={s.image} src={smith} alt="handshake" />
-          <p className={s.descriptionTeam}>
-            <span className={s.name}>Steve Smith</span>
-            <span className={s.jobTitle}>Marketing Head</span>
-          </p>
-        </li>
-      </ul>
+      <TeamList />
     </div>
   );
 };
