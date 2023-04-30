@@ -10,7 +10,7 @@
   }
   @include desktop {
     align-items: center;
-    justify-content: space-between;
+    justify-content: inherit;
   }
 }
 
@@ -88,12 +88,12 @@
   border-radius: 5px;
   font-size: 18px;
   border: 1px solid getColor("clr-white");
-    cursor: pointer;
-    @include transition-animation(all);
-    &:hover,
-    &:focus {
-      background-color: getColor("clr-white");
-      color: getColor("clr-bg");
-      border-radius: 1px solid getColor("clr-bg");
-    }
+  cursor: pointer;
+  @include transition-animation(all);
+  &:hover,
+  &:focus {
+    background-color: getColor("clr-white");
+    color: getColor("clr-bg");
+    border-radius: 1px solid getColor("clr-bg");
   }
+}
