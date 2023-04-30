@@ -1,6 +1,11 @@
 @import "../../sass/utils/mixins";
 @import "../../sass/utils/variables";
 
+.lightbox-wrapper .lightbox-visible {
+  align-items: center;
+  justify-content: center;
+}
+
 .list {
   display: flex;
   flex-direction: column;
@@ -16,6 +21,7 @@
 }
 
 .item {
+  cursor: pointer;
   @include tablet {
     width: calc((100% - 6 * 8px) / 3);
   }
