@@ -30,100 +30,89 @@ import cases6jpg2x from "../../images/cases/cases6@2x.jpg";
 import cases6Webp2x from "../../images/cases/cases6@2x.webp";
 
 const CasesList = () => {
-  const [toggler, setToggler] = useState(false);
+  const [lightboxController, setLightboxController] = useState({
+    toggler: false,
+    slide: 1,
+  });
+
+  function openLightboxOnSlide(number) {
+    setLightboxController({
+      toggler: !lightboxController.toggler,
+      slide: number,
+    });
+  }
+
   return (
-    <ul className={s.list}>
-      <li className={s.item} onClick={() => setToggler(!toggler)}>
-        {/* <button onClick={() => setToggler(!toggler)}> */}
-        {/* Open the lightbox. */}
-        {/* </button> */}
-        <FsLightbox
-          toggler={toggler}
-          sources={[
-            <Picture
-              className={s.image}
-              jpg1x={cases1jpg}
-              jpg2x={cases1Webp}
-              webp1x={cases1jpg2x}
-              webp2x={cases1Webp2x}
-            />,
-            <Picture
-              className={s.image}
-              jpg1x={cases2jpg}
-              jpg2x={cases2Webp}
-              webp1x={cases2jpg2x}
-              webp2x={cases2Webp2x}
-            />,
-            <Picture
-              className={s.image}
-              jpg1x={cases3jpg}
-              jpg2x={cases3Webp}
-              webp1x={cases3jpg2x}
-              webp2x={cases3Webp2x}
-            />,
-            <Picture
-              className={s.image}
-              jpg1x={cases4jpg}
-              jpg2x={cases4Webp}
-              webp1x={cases4jpg2x}
-              webp2x={cases4Webp2x}
-            />,
-          ]}
-        />
-        <Picture
-          className={s.image}
-          jpg1x={cases1jpg}
-          jpg2x={cases1Webp}
-          webp1x={cases1jpg2x}
-          webp2x={cases1Webp2x}
-        />
-      </li>
-      <li className={s.item} onClick={() => setToggler(!toggler)}>
-        <Picture
-          className={s.image}
-          jpg1x={cases2jpg}
-          jpg2x={cases2Webp}
-          webp1x={cases2jpg2x}
-          webp2x={cases2Webp2x}
-        />
-      </li>
-      <li className={s.item}>
-        <Picture
-          className={s.image}
-          jpg1x={cases3jpg}
-          jpg2x={cases3Webp}
-          webp1x={cases3jpg2x}
-          webp2x={cases3Webp2x}
-        />
-      </li>
-      <li className={s.item}>
-        <Picture
-          className={s.image}
-          jpg1x={cases4jpg}
-          jpg2x={cases4Webp}
-          webp1x={cases4jpg2x}
-          webp2x={cases4Webp2x}
-        />
-      </li>
-      <li className={s.item}>
-        <Picture
-          className={s.image}
-          jpg1x={cases5jpg}
-          jpg2x={cases5Webp}
-          webp1x={cases5jpg2x}
-          webp2x={cases5Webp2x}
-        />
-      </li>
-      <li className={s.item}>
-        <Picture
-          className={s.image}
-          jpg1x={cases6jpg}
-          jpg2x={cases6Webp}
-          webp1x={cases6jpg2x}
-          webp2x={cases6Webp2x}
-        />
-      </li>
-    </ul>
+    <>
+      <FsLightbox
+        toggler={lightboxController.toggler}
+        sources={[
+          cases1jpg2x,
+          cases2jpg2x,
+          cases3jpg2x,
+          cases4jpg2x,
+          cases5jpg2x,
+          cases6jpg2x,
+        ]}
+        slide={lightboxController.slide}
+      />
+      <ul className={s.list}>
+        <li className={s.item} onClick={() => openLightboxOnSlide(1)}>
+          <Picture
+            className={s.image}
+            jpg1x={cases1jpg}
+            jpg2x={cases1Webp}
+            webp1x={cases1jpg2x}
+            webp2x={cases1Webp2x}
+          />
+        </li>
+        <li className={s.item} onClick={() => openLightboxOnSlide(2)}>
+          <Picture
+            className={s.image}
+            jpg1x={cases2jpg}
+            jpg2x={cases2Webp}
+            webp1x={cases2jpg2x}
+            webp2x={cases2Webp2x}
+          />
+        </li>
+        <li className={s.item} onClick={() => openLightboxOnSlide(3)}>
+          <Picture
+            className={s.image}
+            jpg1x={cases3jpg}
+            jpg2x={cases3Webp}
+            webp1x={cases3jpg2x}
+            webp2x={cases3Webp2x}
+          />
+        </li>
+        <li className={s.item} onClick={() => openLightboxOnSlide(4)}>
+          <Picture
+            className={s.image}
+            jpg1x={cases4jpg}
+            jpg2x={cases4Webp}
+            webp1x={cases4jpg2x}
+            webp2x={cases4Webp2x}
+          />
+        </li>
+        <li className={s.item} onClick={() => openLightboxOnSlide(5)}>
+          <Picture
+            className={s.image}
+            jpg1x={cases5jpg}
+            jpg2x={cases5Webp}
+            webp1x={cases5jpg2x}
+            webp2x={cases5Webp2x}
+          />
+        </li>
+        <li className={s.item} onClick={() => openLightboxOnSlide(6)}>
+          <Picture
+            className={s.image}
+            jpg1x={cases6jpg}
+            jpg2x={cases6Webp}
+            webp1x={cases6jpg2x}
+            webp2x={cases6Webp2x}
+          />
+        </li>
+      </ul>
+    </>
   );
 };
 
