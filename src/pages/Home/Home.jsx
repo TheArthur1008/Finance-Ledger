@@ -12,7 +12,7 @@ const Home = () => {
       id="home"
       className={s.wrapper}
       style={{
-        backgroundImage: `url(${background})`,
+        backgroundImage: `linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(${background})`,
       }}
     >
       {" "}
