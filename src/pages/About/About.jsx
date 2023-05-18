@@ -5,7 +5,7 @@ import background from "../../images/team/team.jpg";
 
 const About = () => {
   return (
-    <div id="about" className={s.wrapper}>
+    <section id="about" className={s.wrapper}>
       <div
         className={s.image}
         style={{
@@ -25,7 +25,7 @@ const About = () => {
           Read More
         </button>
       </div>
-    </div>
+    </section>
   );
 };
 

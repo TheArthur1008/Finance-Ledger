@@ -5,7 +5,7 @@ import CasesList from "../../components/CasesList/CasesList";
 
 const Cases = () => {
   return (
-    <div id="cases" className={s.container}>
+    <section id="cases" className={s.container}>
       <div className={s.wrapperTitle}>
         <h2 className={s.title}>This is what we do</h2>
         <h3 className={s.subtitle}>Business Cases</h3>
@@ -15,7 +15,7 @@ const Cases = () => {
         </p>
       </div>
       <CasesList />
-    </div>
+    </section>
   );
 };
 

@@ -9,7 +9,7 @@ import Form from "../../components/Form/Form";
 const Contacts = () => {
   return (
     <>
-      <div id="contact" className={s.wrapper}>
+      <section id="contact" className={s.wrapper}>
         <div
           className={s.image}
           style={{
@@ -20,7 +20,7 @@ const Contacts = () => {
           <h2 className={s.title}>Request Callback</h2>
           <Form />
         </div>
-      </div>
+      </section>
       <Footer />
     </>
   );

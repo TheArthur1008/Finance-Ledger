@@ -5,7 +5,7 @@ import background from "../../images/blog/blog.jpg";
 
 const Blog = () => {
   return (
-    <div id="blog" className={s.wrapper}>
+    <section id="blog" className={s.wrapper}>
       <div
         className={s.image}
         style={{
@@ -25,7 +25,7 @@ const Blog = () => {
           Read More
         </button>
       </div>
-    </div>
+    </section>
   );
 };
 

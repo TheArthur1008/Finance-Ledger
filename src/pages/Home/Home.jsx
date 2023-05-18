@@ -9,16 +9,16 @@ import Navigation from "../../components/Navigation/Navigation";
 const Home = () => {
   return (
     <div
-      id="home"
       className={s.wrapper}
       style={{
         backgroundImage: `linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(${background})`,
       }}
     >
-      {" "}
-      <Navigation />
-      <div className={s.container}>
-        <div className={s.wrapperTitle}>
+      <header>
+        <Navigation />
+      </header>
+      <section className={s.container}>
+        <div className={s.wrapperTitle} id="home">
           <h1 className={s.title}>The Sky Is The Limit</h1>
           <div className={s.wrapperSub}>
             <p className={s.subtitle}>
@@ -32,7 +32,7 @@ const Home = () => {
           </svg>
           <span>Read More</span>
         </button>
-      </div>
+      </section>
     </div>
   );
 };
